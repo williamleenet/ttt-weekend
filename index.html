@@ -5,30 +5,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
 	<link rel="stylesheet" href="./css/style.css">
-	<script defer src="./js/app.js">
-	</script>
+	<script defer src="./js/app.js"></script>
+	<script defer src="./js/confetti.js"></script>
 	<title>Tic Tac Toe</title>
 </head>
 
 <body>
 	<h1>Tic Tac Toe</h1>
+	<p class="message"> Get 3 in a row or column to win...</p>
 	<div id="board">
+		<div data-index="0" class="tile right-border bottom-border"></div>
 		<div data-index="1" class="tile right-border bottom-border"></div>
-		<div data-index="2" class="tile right-border bottom-border"></div>
-		<div data-index="3" class="tile bottom-border"></div>
+		<div data-index="2" class="tile bottom-border"></div>
+		<div data-index="3" class="tile right-border bottom-border"></div>
 		<div data-index="4" class="tile right-border bottom-border"></div>
-		<div data-index="5" class="tile right-border bottom-border"></div>
-		<div data-index="6" class="tile bottom-border"></div>
+		<div data-index="5" class="tile bottom-border"></div>
+		<div data-index="6" class="tile right-border"></div>
 		<div data-index="7" class="tile right-border"></div>
-		<div data-index="8" class="tile right-border"></div>
-		<div data-index="9" class="tile"></div>
-		<div id="strike" class="strike"></div>
+		<div data-index="8" class="tile"></div>
 	</div>
 	<div id="game-over-area" class="hidden">
 		<h2 id="game-over-text">Winner is X</h2>
-		<button id="play-again">Play Again</button>
+		<button id="replay-button" type="reset">Replay</button>
 	</div>
 </body>
 

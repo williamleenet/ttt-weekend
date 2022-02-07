@@ -2,8 +2,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: gray;
-  color: greenyellow;
+  background-color: whitesmoke;
+  color: rgb(0, 73, 208);
 }
 
 #board {
@@ -23,61 +23,11 @@ body {
 }
 
 .right-border {
-  border-right: 0.2em solid indigo;
+  border-right: 0.2em solid green;
 }
 
 .bottom-border {
-  border-bottom: 0.2em solid indigo;
-}
-
-.strike {
-  position: absolute;
-  background-color: darkred;
-}
-
-.strike-row-1 {
-  width: 100%;
-  height: 4px;
-  top: 15%;
-}
-.strike-row-2 {
-  width: 100%;
-  height: 4px;
-  top: 48%;
-}
-.strike-row-3 {
-  width: 100%;
-  height: 4px;
-  top: 83%;
-}
-.strike-column-1 {
-  height: 100%;
-  width: 4px;
-  left: 15%;
-}
-.strike-column-2 {
-  height: 100%;
-  width: 4px;
-  left: 48%;
-}
-.strike-column-3 {
-  height: 100%;
-  width: 4px;
-  left: 83%;
-}
-.strike-diagonal-1 {
-  width: 90%;
-  height: 4px;
-  top: 50%;
-  left: 5%;
-  transform: skewY(45deg);
-}
-.strike-diagonal-2 {
-  width: 90%;
-  height: 4px;
-  top: 50%;
-  left: 5%;
-  transform: skewY(-45deg);
+  border-bottom: 0.2em solid green;
 }
 
 h1 {
@@ -86,7 +36,7 @@ h1 {
 
 #game-over-area {
   text-align: center;
-  border: indigo 8px solid;
+  border: rgb(43, 130, 0) 8px solid;
   padding: 50px;
   width: 50%;
   margin-top: 50px;
@@ -112,16 +62,6 @@ button {
 
 .visible {
   display: block;
-}
-
-.x-hover:hover::after {
-  content: "X";
-  opacity: 0.4;
-}
-
-.o-hover:hover::after {
-  content: "O";
-  opacity: 0.4;
 }
 
 /* div {
